@@ -6,6 +6,6 @@ import {DemoBinding} from './demoBinding';
     directives: [DemoBinding]
 })
 export class AppComponent { 
-   
+   asdf = "Hello"
     }
 

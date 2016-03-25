@@ -1,0 +1,28 @@
+{
+  "version": "0.1.0",
+  "command": "npm",
+  "windows": {
+    "command": "npm.cmd"
+  },
+  "tasks": [
+    {
+      // Build task, Ctrl+Shift+B
+      // "npm install --loglevel info"
+      "taskName": "run",
+      "isBuildCommand": true,
+      "args": ["tsc"],
+      "showOutput": "never"
+    },
+    {   
+      // Test task, Ctrl+Shift+T
+      // "npm test"
+      "taskName": "test",
+      "isTestCommand": true
+    },
+    {
+      // "npm run lint"
+      "taskName": "lint",
+      "args": ["run"]
+    }
+  ]
+}
