@@ -1,9 +1,9 @@
 import {Component} from 'angular2/core';
-import {test} from './test';
+import {DemoBinding} from './demoBinding';
 @Component({
     selector: 'my-app',
     templateUrl: 'app/app.component.html',
-    directives: [test]
+    directives: [DemoBinding]
 })
 export class AppComponent { 
    

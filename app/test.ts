@@ -3,12 +3,18 @@ import {CourseService} from './course.service'
 import {AutoGrowDirective} from './auto-grow.directive'
 @Component({
     selector: 'test',
+    styles:[],
     providers: [CourseService],
     directives: [AutoGrowDirective], 
     template: `
+    <style>
+  .zippy {
+    font-weight: xx-large;
+  }
+</style>
     <input type="text" autoGrow />
 <ul *ngFor="#course of courses">
-<li>{{course}}</li>
+<li [style.backgroundColor]="course%2 ? 'green' : 'red' " [class.zippy]="course%2">{{course}}</li>
 </ul>
     `
 
