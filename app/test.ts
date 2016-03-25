@@ -1,9 +1,12 @@
-import { Component, OnInit, Input, Output, EventEmitter } from 'angular2/core';
+import { Component, OnInit, Input, Output, EventEmitter } from 'angular2/core'
 import {CourseService} from './course.service'
+import {AutoGrowDirective} from './auto-grow.directive'
 @Component({
     selector: 'test',
     providers: [CourseService],
+    directives: [AutoGrowDirective], 
     template: `
+    <input type="text" autoGrow />
 <ul *ngFor="#course of courses">
 <li>{{course}}</li>
 </ul>
