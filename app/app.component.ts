@@ -1,7 +1,11 @@
 import {Component} from 'angular2/core';
-
+import {test} from '../test/test';
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    templateUrl: 'app/app.component.html',
+    directives: [test]
 })
-export class AppComponent { }
+export class AppComponent { 
+   
+    }
+
