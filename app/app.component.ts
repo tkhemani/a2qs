@@ -1,14 +1,12 @@
 import {Component} from 'angular2/core';
 import {DemoBinding} from './demoBinding';
 import {SummaryPipe} from './summary.pipe'
+import {Math} from './TemplateForm/templateForm'
 @Component({
     selector: 'my-app',
     templateUrl: 'app/app.component.html',
-    directives: [DemoBinding],
-    pipes: [SummaryPipe],
+    directives: [Math.TemplateForm]
 })
 export class AppComponent { 
-   //asdf = "Hello"
-   largeText = "from the other side....tell you i'm sorry for all the things i've done"
     }
 
