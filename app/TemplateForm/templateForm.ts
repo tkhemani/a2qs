@@ -1,10 +1,10 @@
 import  * as a2 from 'angular2/core';
-import { MdCheckbox } from '@angular2-material/checkbox';
+// import { MdCheckbox } from '@angular2-material/checkbox';
 export namespace Math {
 
 @a2.Component({
     selector: 'templateForm',
-    directives: [MdCheckbox], 
+    // directives: [MdCheckbox], 
     templateUrl: 'app/TemplateForm/templateForm.html',
     styles: [`
     .ng-invalid.ng-touched {

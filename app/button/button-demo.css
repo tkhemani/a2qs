@@ -1,0 +1,7 @@
+.demo-button button, .demo-button a {
+  margin: 8px;
+  text-transform: uppercase; }
+
+.demo-button section {
+  background-color: #f7f7f7;
+  margin: 8px; }
