@@ -11,7 +11,7 @@
       "taskName": "run",
       "isBuildCommand": true,
       "args": ["tsc"],
-      "showOutput": "never"
+      "showOutput": "always"
     },
     {   
       // Test task, Ctrl+Shift+T
