@@ -32,5 +32,13 @@
     "lite-server": "^2.1.0",
     "typescript": "^1.8.9",
     "typings": "^0.7.9"
+  },
+  "jspm": {
+    "dependencies": {
+      "ts": "github:frankwallis/plugin-typescript@^4.0.2"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    }
   }
 }
