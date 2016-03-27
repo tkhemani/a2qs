@@ -16,7 +16,11 @@
     <!-- 2. Configure SystemJS -->
     <script>
       System.config({
+
         transpiler: "ts",
+        typescriptOptions: {  
+    tsconfig: true               // also accepts a path
+  },
   packages: {
     "app": {
       "defaultExtension": "ts",
