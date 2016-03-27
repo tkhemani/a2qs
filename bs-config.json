@@ -1,0 +1,17 @@
+{
+    "injectChanges": false,
+    "port": 8000,
+    "files": [
+        "./**/*.{html,htm,css,js}"
+    ],
+    "server": {
+        "baseDir": "./"
+    },
+    "ui": false,
+    "ghostMode": false,
+    "logLevel": "silent",
+    "logFileChanges": false,
+    "online": false,
+    "open": false,
+    "notify": false
+}
