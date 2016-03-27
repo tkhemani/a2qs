@@ -26,7 +26,7 @@ export class AppComponent implements OnInit{
 					});
 					var	search	=	this.form.find('search');
 search.valueChanges
-      .debounceTime(400)
+      .debounceTime(300)
 	  .map(str	=>	console.log("Getting	deals	for	date	"	+	str))	
 	  .subscribe(x	=>	console.log(x))
 						
