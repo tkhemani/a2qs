@@ -1,12 +1,7 @@
-mport {Component} from 'angular2/core';
-import {MdButton} from '@angular2-material/button';
+import {Component} from 'angular2/core';
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'app/app.component.html',
-    // directives: [ButtonDemo]
-    ]
+    template: '<h1>My First Angular BTranspiled 2 App</h1>'
 })
-export class AppComponent { 
-    }
-
+export class AppComponent { }

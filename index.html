@@ -1,45 +1,43 @@
 <html>
 
-<head>
+  <head>
     <title>Angular 2 QuickStart</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+
     <!-- 1. Load libraries -->
     <!-- IE required polyfills, in this exact order -->
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
-    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+
     <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
     <!-- 2. Configure SystemJS -->
     <script>
-        System.config({
+      System.config({
+        transpiler: "ts",
+  packages: {
+    "app": {
+      "defaultExtension": "ts",
+    }},
         defaultJSExtensions: true,
         map: {
-          "angular2-jwt": "node_modules/angular2-jwt/angular2-jwt",
           "angular2": "node_modules/angular2",
           "rxjs": "node_modules/rxjs",
-          '@angular2-material/core': 'node_modules/@angular2-material/core/core',
-          '@angular2-material/checkbox': 'node_modules/@angular2-material/checkbox/checkbox',
-          '@angular2-material/button': 'node_modules/@angular2-material/button/button',
-          '@angular2-material/card': 'node_modules/@angular2-material/card/card',
-          '@angular2-material/radio': 'node_modules/@angular2-material/radio/radio',
-          '@angular2-material/sidenav': 'node_modules/@angular2-material/sidenav/sidenav',
-          '@angular2-material/toolbar': 'node_modules/@angular2-material/toolbar/toolbar',      
-          '@angular2-material/progress-circle': 'node_modules/@angular2-material/progress-circle/progress-circle'      
-                   
+          "ts": "jspm_packages/github/frankwallis/plugin-typescript@4.0.2/plugin.js",
+           "typescript": "jspm_packages/npm/typescript@1.8.9/lib/typescript.js"                    
         }
       });
-      System.import('app/main')
+      System.import('app/boot')
             .then(null, console.error.bind(console));
     </script>
-</head>
-<!-- 3. Display the application -->
 
-<body>
-    <my-app>Loading...</my-app>
-</body>
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>ttest...</my-app>
+  </body>
 
 </html>
